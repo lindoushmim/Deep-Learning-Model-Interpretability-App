@@ -1,15 +1,28 @@
-#  XAI - Intelligence Artificielle Explicable
-
-Ce dépôt contient les ressources d'un projet de recherche sur l'**Intelligence Artificielle Explicable (XAI)**.
-
-## Contenu du dépôt
-
-- **Notebook d'expérimentation** : Tests de différentes méthodes de XAI dans un contexte éducatif.
-- **Article scientifique** : Présentation des résultats et méthodologies explorées.
-- **Interface interactive** : Application Streamlit pour visualiser et expliquer le fonctionnement des réseaux de neurones.
 
 
-## Prérequis
+# XAI - Intelligence Artificielle Explicable
+
+Visualisation et Interprétation de Réseaux de Neurones avec Streamlit
+
+## 🔍 Aperçu du Projet
+
+![Aperçu de l'application](data/app)
+
+
+Ce projet propose une interface interactive construite avec **Streamlit** permettant de :
+
+1. **Charger un modèle de réseau de neurones** au format `.h5`.
+2. **Visualiser la structure du réseau de neurones**, avec une représentation où :
+   - Les **liens entre les neurones** sont proportionnels aux poids.
+   - Les **neurones activés** lors de la prédiction s'affichent en **rouge**.
+3. **Saisir des données d'entrée** pour obtenir une prédiction du modèle.
+4. **Interpréter la prédiction** grâce aux méthodes d'explication **SHAP** et **LIME**.
+
+---
+
+## 🔄 Installation et Lancement
+
+### Prérequis
 
 Avant de commencer, assurez-vous d'avoir :
 
@@ -25,34 +38,30 @@ Avant de commencer, assurez-vous d'avoir :
 - Un environnement virtuel est **fortement recommandé** (`venv` ou `conda`).
 
 
-
-## Installation des dépendances
-
 ### Cloner le dépôt
 
-- git clone https://forge.univ-lyon1.fr/p1805862/xai.git
+- git clone https://github.com/lindoushmim/Deep-Learning-Model-Interpretability-App.git
 - cd xai
 
-Sur Mac/Linux : 
-- python -m venv venv
-- source venv/bin/activate
+### Créer un environnement
 
-Sur Windows : 
-- python -m venv venv
-- venv\Scripts\activate
+Sur **Mac/Linux** :  
+- python -m venv venv  
+- source venv/bin/activate  
 
-Installer les dépendances
-- pip install nomDépendance
+Sur **Windows** :  
+- python -m venv venv  
+- venv\Scripts\activate  
 
+### Installer les dépendances
 
-## Lancer l'interface Streamlit
-Pour démarrer l'application Streamlit, exécutez :
-streamlit run app.py
+- pip install -r requirements.txt  
 
-Si vous utilisez un environnement virtuel, exécutez : 
-venv/bin/python -m streamlit run app.py
+### Lancer l'interface 
 
-Si vous n'avez pas de modele de réseaux de neurone enregistré dans un fichier .h5, vous pouvez en trouver dans le dossier model pour tester l'application. 
+Pour démarrer l'application, exécutez :  
+- venv/bin/python -m streamlit run app.py  
 
-## Expérimentations pour la recherche
-Le notebook inclus dans ce dépôt contient l'ensemble du code pour nos tests. 
+### Puis tester
+
+Si vous n'avez pas de modèle de réseau de neurones enregistré dans un fichier `.h5`, vous pouvez en trouver dans le dossier **model** pour tester l'application.
