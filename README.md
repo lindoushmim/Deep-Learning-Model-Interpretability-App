@@ -6,7 +6,9 @@ Visualisation et Interprétation de Réseaux de Neurones avec Streamlit
 
 ## 🔍 Aperçu du Projet
 
-<img src="data/app.png" alt="image de l'app" width="500" height="500">
+<p align="center">
+  <img src="data/app.png" alt="image de l'app" width="500" height="300">
+</p>
 
 
 Ce projet propose une interface interactive construite avec **Streamlit** permettant de :
